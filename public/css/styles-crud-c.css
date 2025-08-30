@@ -1,0 +1,117 @@
+.crud-container {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(175, 134, 214);
+    border: 5px rgb(93, 211, 99) solid;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#r {
+    align-self: center;
+    margin: 10px auto;
+    padding: 10px;
+    color: rgb(86, 128, 24);
+    border: 2px green solid;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+.back {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.table-responsive {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead th {
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr td {
+    padding: 8px;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+[data-color="c"]{
+    background-color: rgb(62, 233, 10);
+}
+
+[data-color="s"]{
+    background-color: rgb(111, 111, 216);
+}
+
+[data-color="e"]{
+    background-color: rgb(235, 142, 66);
+    margin: 0px auto;
+}
+
+[data-color="d"]{
+    background-color: rgb(235, 65, 65);
+}
+
+.texto-botton{
+    margin: 1px auto;
+}
+
+.span-title{
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+}
+
+
+#card_title{
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.btn-primary, .btn-success, .btn-danger {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+    border: 2px rgb(22, 22, 22) solid;
+    
+}
+
+
+@media (max-width: 768px) {
+    .table th:nth-child(1),
+    .table td:nth-child(1) {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .btn-primary, .btn-success, .btn-danger {
+    }
+}

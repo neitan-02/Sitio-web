@@ -1,0 +1,133 @@
+/* General container styling */
+.form-container {
+    background-color: rgb(255, 255, 255);
+    padding: 38px;
+    width: 80%;
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Center the form on the page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0; /* Remove border radius */
+}
+
+/* Title styling */
+.form-container h3 {
+    color: #875ca7 !important;
+    text-align: center;
+}
+
+/* Input field styling */
+.form-container .grunion-field-label {
+    display: none; /* Hide the label */
+}
+
+.service-selection,#service-selection {
+    width: 100%; /* Make inputs responsive to 90% of container */
+    background-color:rgb(238, 207, 234);
+    min-width: 300px;
+    color: #875ca7;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+    margin: 30px auto; /* Ensure consistent margin */
+}
+input{
+    width: 100%; /* Make inputs responsive to 90% of container */
+    min-width: 300px;
+    color: #875ca7;
+    border: 1px solid #784F96;
+    padding: 10px;
+    margin: 20px auto; /* Ensure consistent margin */
+}
+.enviar{
+    height: 40px;
+    width: 60%; /* Make inputs responsive to 90% of container */
+    background-color: #9155c2;
+    min-width: 200px;
+    color: #ffffff;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+    margin: 20px auto 0px; /* Ensure consistent margin */
+
+}
+
+/* Placeholder styling */
+.form-container input::placeholder {
+    width: 90%;
+    color: #875ca7; /* Light gray color for placeholder text */
+    
+}
+
+.titulo {
+    width: 80%;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 10px 0px 0px;
+}
+
+/* Button styling */
+.form-container .contact-submit button {
+    background-color: #001f3f;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 200px;
+    margin: 1px auto; /* Ensure consistent margin */
+}
+
+.form-container .contact-submit {
+    text-align: center;
+}
+#contact-form-7{
+    margin: 0px 50px;
+}
+#g7-name {
+    background-color: rgb(238, 207, 234);
+}
+#g7-email {
+    background-color: rgb(238, 207, 234);
+}
+#g7-phone {
+    background-color: rgb(238, 207, 234);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #contact-form-7{
+        margin: 0px 0px;
+    }
+    .form-container {
+        max-width: 600px; /* Ancho máximo para dispositivos móviles */
+        margin: 1px 0px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .form-container input[type='text'],
+    .form-container input[type='email'] {
+        padding: 8px;
+    }
+
+    .form-container .contact-submit button {
+        padding: 8px 16px;
+    }
+}
+
+/* Additional input styling */
+.form-container .akismet-fields-container {
+    display: none !important;
+}
+input{
+    width: 100%; /* Make inputs responsive to 90% of container */
+    background-color: #fff;
+    min-width: 280px;
+    color: #000;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+    margin: 30px auto; /* Ensure consistent margin */
+}

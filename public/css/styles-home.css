@@ -1,0 +1,140 @@
+    /* Variables y estilos generales */
+    :root {
+        --color-primary: #3498db;
+        --color-secondary: #2c3e50;
+        --color-accent: #1abc9c;
+        --color-background: #f4f6f9;
+        --color-text: #2c3e50;
+        --color-white: #ffffff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background-color: var(--color-background);
+    }
+
+    /* Main content styling */
+    .main-content {
+        padding: 20px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--color-secondary);
+        padding-bottom: 10px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        color: var(--color-text);
+    }
+
+    .header .user-info {
+        font-size: 1.2rem;
+        color: var(--color-secondary);
+        font-weight: bold;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background-color: var(--color-white);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+        color: var(--color-primary);
+    }
+
+    .card p {
+        font-size: 1.1rem;
+        color: var(--color-secondary);
+    }
+
+    /* Chart styling */
+    .chart {
+        margin-top: 20px;
+        background-color: var(--color-white);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .chart h2 {
+        margin-bottom: 15px;
+        font-size: 2rem;
+        color: var(--color-primary);
+    }
+
+    .chart p {
+        font-size: 1.1rem;
+        color: var(--color-secondary);
+    }
+
+    [data-type="crud"]{
+            display: flex;
+            padding: 10px;
+            border: 2px black solid;
+            border-radius: 10px;
+            background-color: rgb(103, 103, 207);
+            color: #ffffff;
+            justify-content: center;
+            margin: 15px 0px 0px;
+        }
+
+    /* Mobile specific styling */
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .header .user-info {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Web specific styling */
+    @media (min-width: 769px) {
+        .header {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .cards {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+    }
